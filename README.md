@@ -14,7 +14,8 @@ This repository is a **publication / presentation layer**, not a canonical resea
 - [Microscope Slides — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/microscope-slides/)
 - [Lucy Hutchinson — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/lucy-hutchinson/)
 - [Oliver Cromwell Afterlives and Global Reception — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/oliver-cromwell-afterlives/)
-- [Luzhou / 泸州 — bilingual public historical source guide](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/luzhou-sources/)
+
+- [Hu Jianmin / 胡鉴民 — bilingual source and archival directory](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/hu-jianmin/)
 
 ## Publication boundary
 

@@ -1,4 +1,4 @@
-https://zhhos98-cell.github.io/haohao_research_bib_for_publik/
+https://zhhos98-cell.github.io/bib_for_publik/
 
 # Odd Bibliographies
 
@@ -8,15 +8,15 @@ This repository is a **publication / presentation layer**, not a canonical resea
 
 ## Current pages
 
-- [History of Childhood — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/history-of-childhood/)
-- [Affordances and Scientific Instruments — genealogical working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/scientific-instruments-affordances/)
-- [Failed Experiments and Scientific Instruments — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/failed-experiments-instruments/)
-- [Puritan Women and Manuscript Culture — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/puritan-women-manuscript-culture/)
-- [Microscope Slides — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/microscope-slides/)
-- [Lucy Hutchinson — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/lucy-hutchinson/)
-- [Oliver Cromwell Afterlives and Global Reception — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/oliver-cromwell-afterlives/)
+- [History of Childhood — working bibliography](https://zhhos98-cell.github.io/bib_for_publik/history-of-childhood/)
+- [Affordances and Scientific Instruments — genealogical working bibliography](https://zhhos98-cell.github.io/bib_for_publik/scientific-instruments-affordances/)
+- [Failed Experiments and Scientific Instruments — working bibliography](https://zhhos98-cell.github.io/bib_for_publik/failed-experiments-instruments/)
+- [Puritan Women and Manuscript Culture — working bibliography](https://zhhos98-cell.github.io/bib_for_publik/puritan-women-manuscript-culture/)
+- [Microscope Slides — working bibliography](https://zhhos98-cell.github.io/bib_for_publik/microscope-slides/)
+- [Lucy Hutchinson — working bibliography](https://zhhos98-cell.github.io/bib_for_publik/lucy-hutchinson/)
+- [Oliver Cromwell Afterlives and Global Reception — working bibliography](https://zhhos98-cell.github.io/bib_for_publik/oliver-cromwell-afterlives/)
 
-- [Hu Jianmin / 胡鉴民 — bilingual source and archival directory](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/hu-jianmin/)
+- [Hu Jianmin / 胡鉴民 — bilingual source and archival directory](https://zhhos98-cell.github.io/bib_for_publik/hu-jianmin/)
 
 ## Publication boundary
 
@@ -29,4 +29,3 @@ Treat each topic directory as a public derivative. When a source research corpus
 Public bibliography updates should be additive or source-controlled. If a citation is corrected or removed, preserve enough bibliographic/provenance information to explain the change where it matters. Do not copy private working notes into this repository merely to keep the public page synchronized.
 
 The site is intentionally lightweight: presentation files (`index.html`, `_includes/`, styles/configuration, sitemap/robots) support publication and do not constitute a second research backend.
-\n## Interface source note\n\nThe public-site interface borrows the sparse, text-first visual language of Cambridge's *English Handwriting 1500–1700* course without copying its assets. UI background manuscript: public-domain 1623 secretary-hand manuscript, Wikimedia Commons (`Secretary hand bond 1623.jpg`).\n

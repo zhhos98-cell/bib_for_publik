@@ -58,9 +58,10 @@ body::after{
 a{color:var(--link);text-decoration:none}
 a:hover,a:focus-visible{text-decoration:underline}
 .site-header,.page,footer{
-  width:min(calc(100% - 34px),860px);
-  margin-left:auto;
-  margin-right:auto;
+  width:auto;
+  max-width:none;
+  margin-left:28px;
+  margin-right:28px;
   background:transparent!important;
   border:0!important;
   box-shadow:none!important;
@@ -91,7 +92,7 @@ a:hover,a:focus-visible{text-decoration:underline}
   margin:0 0 21px!important;
   padding:11px 0 0!important;
   border:0!important;
-  text-align:center;
+  text-align:left;
 }
 .hero h1,.bib-intro h1,h1{
   max-width:none;
@@ -123,7 +124,7 @@ a:hover,a:focus-visible{text-decoration:underline}
 }
 .dek{
   max-width:720px;
-  margin:10px auto 0;
+  margin:10px 0 0;
   color:#16282c;
   font-size:.98rem;
   line-height:1.42;
@@ -133,10 +134,10 @@ a:hover,a:focus-visible{text-decoration:underline}
 .home .hero .dek{max-width:610px;font-size:.88rem}
 .home-list{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:16px 24px;
-  padding:13px 18px 46px;
-  text-align:center;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:12px 28px;
+  padding:13px 0 46px;
+  text-align:left;
 }
 .home-card{
   display:block!important;
@@ -164,8 +165,8 @@ a:hover,a:focus-visible{text-decoration:underline}
 .home-card:hover h2{text-decoration:underline!important}
 .home-card p{display:none}
 .scope{
-  max-width:760px!important;
-  margin:14px auto 25px!important;
+  max-width:none!important;
+  margin:14px 0 25px!important;
   padding:0!important;
   border:0!important;
   border-left:0!important;
@@ -255,8 +256,8 @@ a:hover,a:focus-visible{text-decoration:underline}
   font-size:.78rem!important;
 }
 .tools{
-  max-width:760px!important;
-  margin:12px auto 24px!important;
+  max-width:none!important;
+  margin:12px 0 24px!important;
   padding:0!important;
   border:0!important;
   background:transparent!important;
@@ -290,7 +291,7 @@ footer{
 hr{height:0;border:0;border-top:1px solid var(--rule)}
 @media(max-width:700px){
   body{font-size:15px}
-  .site-header,.page,footer{width:min(calc(100% - 22px),860px)}
+  .site-header,.page,footer{width:auto;margin-left:12px;margin-right:12px}
   .site-header{align-items:flex-start;flex-direction:column;gap:4px;padding-top:12px}
   .home .hero{padding-top:18px!important}
   .home-list{grid-template-columns:1fr 1fr;gap:13px 15px;padding-left:0;padding-right:0}

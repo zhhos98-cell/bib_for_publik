@@ -1,64 +1,295 @@
+@font-face{
+  font-family:'EB Garamond Local';
+  src:url('https://raw.githubusercontent.com/zhhos98-cell/Blachka_corpus/main/assets/fonts/EBGaramond-PublicSubset.woff2') format('woff2');
+  font-style:normal;
+  font-weight:400 800;
+  font-display:swap;
+}
 :root{
-  --site-bg:#dfe7e8;
-  --paper:#ffffff;
-  --ink:#1f2a2e;
-  --muted:#52656b;
-  --faint:#74868b;
-  --line:#aebfc3;
-  --line-soft:#d7e0e2;
-  --panel:#f3f7f7;
-  --link:#064f8c;
-  --serif:Georgia,"Times New Roman",Times,serif;
-  --sans:Verdana,Arial,Helvetica,sans-serif
+  --aqua:#c9e1df;
+  --ink:#111;
+  --muted:#38484c;
+  --faint:#61777c;
+  --link:#0645ad;
+  --rule:rgba(19,49,54,.45);
+  --font-reading:'EB Garamond Local','EB Garamond',Garamond,Georgia,'Times New Roman',serif;
+  --font-ui:'EB Garamond Local','EB Garamond',Garamond,Georgia,'Times New Roman',serif;
 }
 *{box-sizing:border-box}
-html{background:var(--site-bg);scroll-behavior:smooth}
-body{margin:0;background:var(--site-bg);color:var(--ink);font-family:var(--serif);font-size:15px;line-height:1.45;text-rendering:optimizeLegibility}
-a{color:var(--link);text-decoration:underline;text-underline-offset:2px}
-a:hover,a:focus-visible{color:#8b2d20}
-.site-header,.page,footer{width:min(calc(100% - 28px),920px);background:var(--paper)}
-.site-header{margin:18px auto 0;display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:13px 18px 10px;border:1px solid var(--line);border-bottom:3px double var(--line)}
-.brand{color:#20353b;font-size:1.45rem;font-weight:normal;text-decoration:none;letter-spacing:.01em}
-.site-nav{display:flex;flex-wrap:wrap;gap:8px 14px;font-family:var(--sans);font-size:.68rem;color:var(--muted)}
+html{min-height:100%;background:var(--aqua)}
+body{
+  position:relative;
+  z-index:0;
+  min-height:100vh;
+  margin:0;
+  background:var(--aqua);
+  color:var(--ink);
+  font-family:var(--font-reading);
+  font-size:16px;
+  line-height:1.38;
+  font-kerning:normal;
+  text-rendering:optimizeLegibility;
+}
+body::before{
+  content:"";
+  position:fixed;
+  z-index:-2;
+  inset:0;
+  background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Secretary_hand_bond_1623.jpg/960px-Secretary_hand_bond_1623.jpg');
+  background-size:cover;
+  background-position:center top;
+  filter:grayscale(1) invert(1) contrast(1.25);
+  opacity:.21;
+  pointer-events:none;
+}
+body::after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  inset:0;
+  background:rgba(193,222,220,.56);
+  pointer-events:none;
+}
+a{color:var(--link);text-decoration:none}
+a:hover,a:focus-visible{text-decoration:underline}
+.site-header,.page,footer{
+  width:min(calc(100% - 34px),860px);
+  margin-left:auto;
+  margin-right:auto;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.site-header{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:18px;
+  padding:20px 0 7px;
+  font-size:.84rem;
+}
+.brand{
+  color:#111;
+  font-weight:600;
+  text-decoration:none;
+}
+.site-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px 14px;
+  font-family:var(--font-reading);
+  font-size:.82rem;
+}
 .site-nav a{color:var(--link)}
-.page{margin:0 auto;padding:20px 24px 34px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
-.hero,.bib-intro{padding:6px 0 18px;border-bottom:1px solid var(--line-soft);margin-bottom:22px}
-.eyebrow{margin:0 0 6px;font-family:var(--sans);font-size:.64rem;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
-h1{max-width:830px;margin:0 0 10px;color:#1d3036;font-size:2.45rem;line-height:1.05;letter-spacing:-.015em;font-weight:normal}
-h2{color:#243a41;font-weight:normal}
-.dek{max-width:760px;margin:0;color:var(--muted);font-size:1rem;line-height:1.55}
-.home-list{padding:0 0 12px}
-.home-card{display:grid;grid-template-columns:105px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-soft);text-decoration:none}
-.home-card:first-child{border-top:1px solid var(--line-soft)}
-.home-card .date{padding-top:3px;font-family:var(--sans);font-size:.63rem;color:var(--faint)}
-.home-card h2{margin:0 0 4px;color:var(--link);font-size:1.15rem;line-height:1.25;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
-.home-card p{max-width:690px;margin:0;color:var(--muted);font-size:.93rem;line-height:1.45}
-.home-card:hover h2{color:#8b2d20}
-.bib-intro h1{font-size:2.35rem}
-.scope{max-width:none;margin:0 0 28px;padding:13px 15px;background:var(--panel);border:1px solid var(--line-soft);color:#40545a;font-size:.92rem;line-height:1.55}
-.bib-section{margin:0 0 34px}
-.bib-section-head{display:grid;grid-template-columns:64px 1fr;gap:14px;margin-bottom:6px;padding:9px 0 6px;border-top:1px solid var(--line)}
-.bib-section-head .section-mark{font-family:var(--sans);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
-.bib-section-head h2{margin:0;font-size:1.35rem;line-height:1.2}
+.page{padding:0 0 28px!important}
+.hero,.bib-intro{
+  margin:0 0 21px!important;
+  padding:11px 0 0!important;
+  border:0!important;
+  text-align:center;
+}
+.hero h1,.bib-intro h1,h1{
+  max-width:none;
+  margin:0;
+  padding:0 0 7px;
+  border-bottom:1px solid var(--rule);
+  color:#0b0b0b;
+  font-family:var(--font-reading);
+  font-size:2.2rem;
+  font-weight:650;
+  line-height:1.08;
+  letter-spacing:0;
+}
+.hero h2,.course-subtitle{
+  margin:7px 0 12px;
+  color:#111;
+  font-size:1rem;
+  font-style:italic;
+  font-weight:500;
+}
+.eyebrow{
+  margin:0 0 5px;
+  color:#24383c;
+  font-family:var(--font-reading);
+  font-size:.76rem;
+  font-style:italic;
+  letter-spacing:0;
+  text-transform:none;
+}
+.dek{
+  max-width:720px;
+  margin:10px auto 0;
+  color:#16282c;
+  font-size:.98rem;
+  line-height:1.42;
+}
+.home .site-header{display:none}
+.home .hero{padding-top:28px!important}
+.home .hero .dek{max-width:610px;font-size:.88rem}
+.home-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px 24px;
+  padding:13px 18px 46px;
+  text-align:center;
+}
+.home-card{
+  display:block!important;
+  padding:5px 3px!important;
+  border:0!important;
+  background:transparent!important;
+  text-decoration:none;
+}
+.home-card .date{
+  display:block;
+  margin:0 0 2px;
+  color:#3d6669;
+  font-family:var(--font-reading);
+  font-size:.68rem;
+  font-style:italic;
+}
+.home-card h2{
+  margin:0!important;
+  color:var(--link)!important;
+  font-size:.92rem!important;
+  font-weight:500!important;
+  line-height:1.15!important;
+  text-decoration:none!important;
+}
+.home-card:hover h2{text-decoration:underline!important}
+.home-card p{display:none}
+.scope{
+  max-width:760px!important;
+  margin:14px auto 25px!important;
+  padding:0!important;
+  border:0!important;
+  border-left:0!important;
+  background:transparent!important;
+  color:#1c3034!important;
+  font-size:.94rem!important;
+  line-height:1.45!important;
+}
+.bib-section{margin:0 0 28px}
+.bib-section-head{
+  display:grid;
+  grid-template-columns:60px 1fr;
+  gap:10px;
+  margin:0 0 7px;
+  padding:5px 0 4px;
+  border:0!important;
+  border-bottom:1px solid rgba(19,49,54,.28)!important;
+  background:transparent!important;
+}
+.bib-section-head .section-mark{
+  color:#46696c;
+  font-family:var(--font-reading);
+  font-size:.76rem;
+  font-style:italic;
+  letter-spacing:0;
+  text-transform:none;
+}
+.bib-section-head h2{
+  margin:0;
+  color:#111;
+  font-size:1.2rem;
+  font-weight:600;
+  line-height:1.2;
+}
 .bib-list{margin:0;padding:0;list-style:none}
-.bib-entry{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:8px 0 9px;border-top:1px dotted #cbd6d8}
-.bib-entry:first-child{border-top:0}
-.bib-year{margin:2px 0 0;font-family:var(--sans);font-size:.62rem;font-weight:bold;color:var(--faint)}
-.bib-citation{max-width:100ch;margin:0;font-size:.98rem;line-height:1.45}
-.bib-links{margin:3px 0 0;font-family:var(--sans);font-size:.66rem;line-height:1.45;color:var(--muted)}
-.bib-links a{margin-right:10px}
-.note{font-family:var(--sans);font-size:.68rem;color:var(--faint)}
-footer{margin:0 auto 22px;padding:10px 18px 14px;border:1px solid var(--line);border-top:3px double var(--line);font-family:var(--sans);font-size:.64rem;line-height:1.45;color:var(--faint)}
-.record{border-color:var(--line-soft)!important}
-.record h3{color:#263c43;font-weight:normal}
-.record .meta{color:var(--faint)!important;font-family:var(--sans)}
-.jump{padding:8px 0 12px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);font-family:var(--sans);font-size:.72rem}
+.bib-entry{
+  display:grid;
+  grid-template-columns:60px minmax(0,1fr);
+  gap:10px;
+  padding:5px 0!important;
+  border:0!important;
+  background:transparent!important;
+}
+.bib-year{
+  margin:1px 0 0;
+  color:#46696c;
+  font-family:var(--font-reading);
+  font-size:.72rem;
+  font-style:italic;
+  font-weight:400;
+  letter-spacing:0;
+}
+.bib-citation{
+  max-width:none;
+  margin:0;
+  color:#111;
+  font-size:.96rem;
+  line-height:1.38;
+}
+.bib-links{
+  margin:2px 0 0;
+  color:#385a5e;
+  font-family:var(--font-reading);
+  font-size:.72rem;
+  line-height:1.3;
+}
+.bib-links a{margin-right:10px;color:var(--link)}
+.note{font-size:.75rem;color:#45666a}
+.record{
+  padding:.45rem 0!important;
+  border:0!important;
+  border-bottom:0!important;
+  background:transparent!important;
+}
+.record h3{margin:0 0 .18rem!important;color:#111!important;font-size:1.03rem!important;font-weight:600!important}
+.record p{line-height:1.38!important}
+.record .meta{color:#45666a!important;font-size:.76rem!important;font-style:italic}
+.jump{
+  display:flex!important;
+  flex-wrap:wrap;
+  gap:5px 14px!important;
+  margin:12px 0 22px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  font-family:var(--font-reading)!important;
+  font-size:.78rem!important;
+}
+.tools{
+  max-width:760px!important;
+  margin:12px auto 24px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  font-family:var(--font-reading)!important;
+  font-size:.78rem!important;
+}
+.tools label{margin-bottom:3px!important;color:#26484c!important}
+.tools input{
+  width:100%;
+  padding:3px 5px!important;
+  border:1px solid rgba(19,49,54,.45)!important;
+  border-radius:0!important;
+  background:rgba(255,255,255,.48)!important;
+  color:#111!important;
+  font-family:var(--font-reading)!important;
+  font-size:.85rem!important;
+}
+.tools .links{margin-top:5px!important}
+.tags{color:#365c60!important;font-family:var(--font-reading)!important;font-size:.7rem!important}
+.statusline{color:#365c60!important;font-family:var(--font-reading)!important;font-size:.74rem!important}
+footer{
+  margin-top:0;
+  padding:8px 0 24px!important;
+  border:0!important;
+  border-top:1px solid var(--rule)!important;
+  color:#203d41;
+  font-family:var(--font-reading);
+  font-size:.73rem;
+  text-align:center;
+}
+hr{height:0;border:0;border-top:1px solid var(--rule)}
 @media(max-width:700px){
-  body{font-size:14px}
-  .site-header,.page,footer{width:min(calc(100% - 16px),920px)}
-  .site-header{align-items:flex-start;flex-direction:column;gap:7px}
-  .page{padding:16px 15px 28px}
-  h1,.bib-intro h1{font-size:2rem}
-  .home-card,.bib-section-head,.bib-entry{grid-template-columns:1fr;gap:4px}
-  .home-card .date,.bib-year{margin:0}
+  body{font-size:15px}
+  .site-header,.page,footer{width:min(calc(100% - 22px),860px)}
+  .site-header{align-items:flex-start;flex-direction:column;gap:4px;padding-top:12px}
+  .home .hero{padding-top:18px!important}
+  .home-list{grid-template-columns:1fr 1fr;gap:13px 15px;padding-left:0;padding-right:0}
+  .hero h1,.bib-intro h1,h1{font-size:1.75rem}
+  .bib-section-head,.bib-entry{grid-template-columns:1fr;gap:2px}
+  .bib-year{margin:0}
 }

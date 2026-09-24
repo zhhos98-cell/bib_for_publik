@@ -1,6 +1,6 @@
 # 胡鉴民史料与馆藏资料汇编 / Hu Jianmin: Source and Archive Directory
 
-[Public bilingual webpage](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/hu-jianmin/) · [CSV link table](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/hu-jianmin/sources.csv)
+[Public bilingual webpage](https://zhhos98-cell.github.io/bib_for_publik/hu-jianmin/) · [CSV link table](https://zhhos98-cell.github.io/bib_for_publik/hu-jianmin/sources.csv)
 
 A = original page, B = period source or institutional locator, C = retrospective/secondary, N = bounded negative. No Strasbourg diploma or original French dissertation has been recovered. This public edition contains bibliographic records and public links, not private research notes.
 

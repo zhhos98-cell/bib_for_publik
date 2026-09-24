@@ -12,7 +12,12 @@
   --faint:#61777c;
   --link:#0645ad;
   --rule:rgba(19,49,54,.45);
+  --line:rgba(19,49,54,.45);
+  --line-soft:rgba(19,49,54,.22);
+  --muted:#38484c;
+  --faint:#61777c;
   --font-reading:'EB Garamond Local','EB Garamond',Garamond,Georgia,'Times New Roman',serif;
+  --sans:'EB Garamond Local','EB Garamond',Garamond,Georgia,'Times New Roman',serif;
   --font-ui:'EB Garamond Local','EB Garamond',Garamond,Georgia,'Times New Roman',serif;
 }
 *{box-sizing:border-box}

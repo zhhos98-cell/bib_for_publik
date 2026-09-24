@@ -8,6 +8,7 @@ This repository is a **publication / presentation layer**, not a canonical resea
 
 ## Current pages
 
+- [History of Childhood — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/history-of-childhood/)
 - [Affordances and Scientific Instruments — genealogical working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/scientific-instruments-affordances/)
 - [Failed Experiments and Scientific Instruments — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/failed-experiments-instruments/)
 - [Puritan Women and Manuscript Culture — working bibliography](https://zhhos98-cell.github.io/haohao_research_bib_for_publik/puritan-women-manuscript-culture/)

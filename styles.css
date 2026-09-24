@@ -286,7 +286,7 @@ footer{
   color:#203d41;
   font-family:var(--font-reading);
   font-size:.73rem;
-  text-align:center;
+  text-align:left;
 }
 hr{height:0;border:0;border-top:1px solid var(--rule)}
 @media(max-width:700px){

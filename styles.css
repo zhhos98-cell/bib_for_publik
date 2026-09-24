@@ -143,13 +143,7 @@ h1{
   text-decoration:none;
 }
 
-.home-card .date{
-  display:block;
-  margin:0 0 1px;
-  color:#566365;
-  font-size:10.5px;
-  font-style:normal;
-}
+.home-card .date{display:none}
 
 .home-card h2{
   margin:0!important;
@@ -199,6 +193,17 @@ h1{
 .bib-section-head h2{
   display:inline;
   margin:0;
+  color:#111;
+  font-size:16px;
+  font-weight:600;
+  line-height:1.15;
+}
+
+.page > section > h2,
+.page > h2{
+  margin:12px 0 4px;
+  padding-bottom:2px;
+  border-bottom:1px solid #a6b7b8;
   color:#111;
   font-size:16px;
   font-weight:600;

@@ -1,1 +1,64 @@
-:root{--bg:#1d1714;--paper:#f2eee9;--muted:rgba(242,238,233,.64);--faint:rgba(242,238,233,.40);--line:rgba(242,238,233,.12);--accent:#d6a17e;--serif:Garamond,"EB Garamond",Georgia,"Times New Roman",serif;--sans:"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}*{box-sizing:border-box}html{background:var(--bg);color-scheme:dark;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--serif);font-kerning:normal;text-rendering:optimizeLegibility}a{color:inherit}.site-header{width:min(calc(100% - 44px),1220px);margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-size:1rem;text-decoration:none;letter-spacing:.01em}.site-nav{display:flex;gap:18px;font-family:var(--sans);font-size:.72rem;color:var(--muted)}.site-nav a{text-decoration:none}.site-nav a:hover,.site-nav a:focus-visible{color:#fff}.page{width:min(calc(100% - 44px),1220px);margin:0 auto}.hero{padding:clamp(68px,8vw,112px) 0 42px}.eyebrow{margin:0 0 14px;font-family:var(--sans);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}h1{max-width:1000px;margin:0 0 18px;font-size:clamp(3.35rem,7vw,7rem);line-height:.9;letter-spacing:-.045em;font-weight:500}.dek{max-width:850px;margin:0;color:var(--muted);font-size:clamp(1.04rem,1.5vw,1.2rem);line-height:1.55}.home-list{padding:14px 0 80px}.home-card{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:28px 0;border-top:1px solid var(--line);text-decoration:none}.home-card:last-child{border-bottom:1px solid var(--line)}.home-card .date{font-family:var(--sans);font-size:.62rem;color:var(--faint);letter-spacing:.06em}.home-card h2{margin:0 0 8px;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:500}.home-card p{max-width:760px;margin:0;color:var(--muted);font-size:1rem;line-height:1.5}.home-card:hover h2{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.bib-intro{padding:clamp(64px,7vw,92px) 0 34px}.bib-intro h1{font-size:clamp(3.35rem,6.2vw,6.25rem)}.scope{max-width:900px;margin:0 0 52px;color:var(--muted);font-size:1rem;line-height:1.58}.bib-section{margin:0 0 58px}.bib-section-head{display:grid;grid-template-columns:90px 1fr;gap:24px;margin-bottom:8px;padding-top:18px;border-top:1px solid var(--line)}.bib-section-head .section-mark{font-family:var(--sans);font-size:.60rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}.bib-section-head h2{margin:0;font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.02;font-weight:500}.bib-list{margin:0;padding:0;list-style:none}.bib-entry{display:grid;grid-template-columns:90px minmax(0,1fr);gap:24px;padding:11px 0 13px}.bib-year{margin:4px 0 0;font-family:var(--sans);font-size:.61rem;font-weight:650;letter-spacing:.05em;color:var(--faint)}.bib-citation{max-width:100ch;margin:0;font-size:clamp(1.02rem,1.28vw,1.14rem);line-height:1.4;font-weight:400}.bib-links{margin:5px 0 0;font-family:var(--sans);font-size:.63rem;line-height:1.45;color:var(--muted)}.bib-links a{text-decoration-color:rgba(242,238,233,.28);text-underline-offset:3px}.bib-links a:hover{color:#fff}.note{font-family:var(--sans);font-size:.68rem;color:var(--faint)}footer{width:min(calc(100% - 44px),1220px);margin:20px auto 0;padding:24px 0 40px;border-top:1px solid var(--line);font-family:var(--sans);font-size:.65rem;line-height:1.5;color:var(--faint)}footer a{text-underline-offset:3px}@media(max-width:720px){.site-header,.page,footer{width:min(calc(100% - 30px),1220px)}.site-header{align-items:flex-start}.site-nav{gap:12px}.hero,.bib-intro{padding-top:52px}.home-card,.bib-section-head,.bib-entry{grid-template-columns:1fr;gap:6px}.home-card .date,.bib-year{margin:0}.bib-section-head{gap:8px}.bib-entry{padding:12px 0 14px}h1{font-size:clamp(2.85rem,15vw,4.5rem)}.dek{font-size:1rem}}
+:root{
+  --site-bg:#dfe7e8;
+  --paper:#ffffff;
+  --ink:#1f2a2e;
+  --muted:#52656b;
+  --faint:#74868b;
+  --line:#aebfc3;
+  --line-soft:#d7e0e2;
+  --panel:#f3f7f7;
+  --link:#064f8c;
+  --serif:Georgia,"Times New Roman",Times,serif;
+  --sans:Verdana,Arial,Helvetica,sans-serif
+}
+*{box-sizing:border-box}
+html{background:var(--site-bg);scroll-behavior:smooth}
+body{margin:0;background:var(--site-bg);color:var(--ink);font-family:var(--serif);font-size:15px;line-height:1.45;text-rendering:optimizeLegibility}
+a{color:var(--link);text-decoration:underline;text-underline-offset:2px}
+a:hover,a:focus-visible{color:#8b2d20}
+.site-header,.page,footer{width:min(calc(100% - 28px),920px);background:var(--paper)}
+.site-header{margin:18px auto 0;display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:13px 18px 10px;border:1px solid var(--line);border-bottom:3px double var(--line)}
+.brand{color:#20353b;font-size:1.45rem;font-weight:normal;text-decoration:none;letter-spacing:.01em}
+.site-nav{display:flex;flex-wrap:wrap;gap:8px 14px;font-family:var(--sans);font-size:.68rem;color:var(--muted)}
+.site-nav a{color:var(--link)}
+.page{margin:0 auto;padding:20px 24px 34px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.hero,.bib-intro{padding:6px 0 18px;border-bottom:1px solid var(--line-soft);margin-bottom:22px}
+.eyebrow{margin:0 0 6px;font-family:var(--sans);font-size:.64rem;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+h1{max-width:830px;margin:0 0 10px;color:#1d3036;font-size:2.45rem;line-height:1.05;letter-spacing:-.015em;font-weight:normal}
+h2{color:#243a41;font-weight:normal}
+.dek{max-width:760px;margin:0;color:var(--muted);font-size:1rem;line-height:1.55}
+.home-list{padding:0 0 12px}
+.home-card{display:grid;grid-template-columns:105px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-soft);text-decoration:none}
+.home-card:first-child{border-top:1px solid var(--line-soft)}
+.home-card .date{padding-top:3px;font-family:var(--sans);font-size:.63rem;color:var(--faint)}
+.home-card h2{margin:0 0 4px;color:var(--link);font-size:1.15rem;line-height:1.25;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+.home-card p{max-width:690px;margin:0;color:var(--muted);font-size:.93rem;line-height:1.45}
+.home-card:hover h2{color:#8b2d20}
+.bib-intro h1{font-size:2.35rem}
+.scope{max-width:none;margin:0 0 28px;padding:13px 15px;background:var(--panel);border:1px solid var(--line-soft);color:#40545a;font-size:.92rem;line-height:1.55}
+.bib-section{margin:0 0 34px}
+.bib-section-head{display:grid;grid-template-columns:64px 1fr;gap:14px;margin-bottom:6px;padding:9px 0 6px;border-top:1px solid var(--line)}
+.bib-section-head .section-mark{font-family:var(--sans);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.bib-section-head h2{margin:0;font-size:1.35rem;line-height:1.2}
+.bib-list{margin:0;padding:0;list-style:none}
+.bib-entry{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:8px 0 9px;border-top:1px dotted #cbd6d8}
+.bib-entry:first-child{border-top:0}
+.bib-year{margin:2px 0 0;font-family:var(--sans);font-size:.62rem;font-weight:bold;color:var(--faint)}
+.bib-citation{max-width:100ch;margin:0;font-size:.98rem;line-height:1.45}
+.bib-links{margin:3px 0 0;font-family:var(--sans);font-size:.66rem;line-height:1.45;color:var(--muted)}
+.bib-links a{margin-right:10px}
+.note{font-family:var(--sans);font-size:.68rem;color:var(--faint)}
+footer{margin:0 auto 22px;padding:10px 18px 14px;border:1px solid var(--line);border-top:3px double var(--line);font-family:var(--sans);font-size:.64rem;line-height:1.45;color:var(--faint)}
+.record{border-color:var(--line-soft)!important}
+.record h3{color:#263c43;font-weight:normal}
+.record .meta{color:var(--faint)!important;font-family:var(--sans)}
+.jump{padding:8px 0 12px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);font-family:var(--sans);font-size:.72rem}
+@media(max-width:700px){
+  body{font-size:14px}
+  .site-header,.page,footer{width:min(calc(100% - 16px),920px)}
+  .site-header{align-items:flex-start;flex-direction:column;gap:7px}
+  .page{padding:16px 15px 28px}
+  h1,.bib-intro h1{font-size:2rem}
+  .home-card,.bib-section-head,.bib-entry{grid-template-columns:1fr;gap:4px}
+  .home-card .date,.bib-year{margin:0}
+}

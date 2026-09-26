@@ -346,3 +346,14 @@ hr{
   text-underline-offset:.13em;
   text-decoration-skip-ink:auto;
 }
+
+
+.book-history-key,
+.bib-entry.book-history .bib-citation em{
+  background-image:linear-gradient(to right,#657b7d 45%,transparent 45%);
+  background-repeat:repeat-x;
+  background-position:left bottom;
+  background-size:4px 1px;
+  padding-bottom:.13em;
+}
+/* end book-history marks */

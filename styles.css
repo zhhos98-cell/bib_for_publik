@@ -330,3 +330,19 @@ hr{
 @media(max-width:420px){
   .home-list{grid-template-columns:1fr}
 }
+
+.bib-meta{
+  margin:5px 0 0;
+  color:var(--quiet);
+  font-size:11px;
+  line-height:1.3;
+}
+
+.child-hps-key,
+.bib-entry.child-hps .bib-citation em{
+  text-decoration-line:underline;
+  text-decoration-thickness:.06em;
+  text-decoration-color:#657b7d;
+  text-underline-offset:.13em;
+  text-decoration-skip-ink:auto;
+}

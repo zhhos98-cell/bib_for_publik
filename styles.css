@@ -371,3 +371,18 @@ hr{
   text-decoration:none;
   vertical-align:super;
 }
+
+
+.title-link{
+  color:inherit;
+  text-decoration:none;
+}
+
+.title-link:visited{
+  color:inherit;
+}
+
+.title-link:hover,
+.title-link:focus-visible{
+  text-decoration:underline;
+}
